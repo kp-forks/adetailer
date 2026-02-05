@@ -22,7 +22,7 @@ def ultralytics_predict(
     device: str = "",
     classes: str = "",
 ) -> PredictOutput[float]:
-    from ultralytics import YOLO  # noqa: PLC0415
+    from ultralytics import YOLO
 
     model = YOLO(model_path)
     apply_classes(model, model_path, classes)
